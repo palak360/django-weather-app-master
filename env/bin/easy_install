@@ -1,0 +1,12 @@
+#!/bin/sh
+'''exec' "/Users/john/Desktop/Applications/Data Engineering/rest_api/c33b156e-36bd-42b0-9923-4d75c7cce2e5/env/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from setuptools.command.easy_install import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
